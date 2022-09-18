@@ -7,3 +7,4 @@ ipython_config.py
 __pypackages__/
 venv
 .idea/
+**/bot_token.*
