@@ -24,7 +24,7 @@ def menu(message: Message):
         bot.register_next_step_handler(action, noncardinal, num)
     elif message.text == 'Большое':
         num = random.randint(99, 999999999)
-        action = bot.send_message(message.chat.id, f'{num}', reply_markup=answer_keyboard)
+        action = bot.send_message(message.chat.id, f'{"{:,}".format(num)}', reply_markup=answer_keyboard)
         bot.register_next_step_handler(action, cardinal, num)
     elif message.text == 'Нецелое':
         num = random.randint(0, 9999) + round(random.random(), 2)
