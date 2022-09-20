@@ -1,6 +1,5 @@
 from telebot import TeleBot, types
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-
 from data.bot_token import TOKEN
 
 bot = TeleBot(TOKEN)
